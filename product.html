@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="
+    https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+    " rel="stylesheet">
+</head>
+<body>
+     <!--responsive navbar-->
+     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2x1">GREENDEN</h1>
+        <img src="./images/menu.png" width="20px" height="20px" class="md:hidden ">
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html"> Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html"> Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html"> Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Product title sec-->
+    <div class="text-center mt-5">
+        <h1 class="font-bold text-3xl text-center p-4">Our Products</h1>
+        <input type="text" placeholder="Search for a Product..." style="width: 80%;" class="border border-black p-2 rounded ">
+    </div>
+
+    <!--products img-->
+    <div class="grid md:grid-cols-4 p-5 mt-5 text-center gap-5 grid-cols-2">
+        <div>
+            <img src="./images/p1rose.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div>
+        <div>
+            <img src="./images/p2Hydrangea.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+            <p>Hydrangea Plant</p>
+            <p>$40</p>
+        </div>
+        <div>
+            <img src="./images/p3Lavender.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+            <p>Lavender Plant</p>
+            <p>$30</p>
+        </div>
+        <div>
+            <img src="./images/p4peony.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+            <p>peony Plant</p>
+            <p>$50</p>
+        </div>
+        <div>
+            <img src="./images/p5Daisy.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+            <p>Daisy Plant</p>
+            <p>$60</p>
+        </div>
+        <div>
+            <img src="./images/p6orchid.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+            <p>Orchid Plant</p>
+            <p>$35</p>
+        </div>
+        <div>
+            <img src="./images/p7dahlia.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+            <p>Dahlia Plant</p>
+            <p>$45</p>
+        </div>
+        <div>
+            <img src="./images/p8snowdrop.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+            <p>Snowdrop Plant</p>
+            <p>$25</p>
+        </div>
+    </div>
+    <!--footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-6">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p>Rooted in quality, our plants are designed to thrive in any space, helping you cultivate a greener, more vibrant life.</p>
+        <p>&copy; 2021 Greenday.com</p>
+
+    </section>
+    
+</body>
+</html>
