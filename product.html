@@ -12,7 +12,7 @@
      <!--responsive navbar-->
      <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2x1">GREENDEN</h1>
-        <img src="./images/menu.png" width="20px" height="20px" class="md:hidden ">
+        <img src="./images/menu.png" id="menu_img" width="20px" height="20px" class="md:hidden ">
 
         <ul class="flex gap-5 text-gray-600 hidden md:flex">
             <li>
@@ -26,52 +26,71 @@
             </li>
         </ul>
     </nav>
+    <!--side bar-->
+    <section id="side_bar" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 " style="width:50%; height:100vh; right:-50%;">
+        <div id="close_nav" class="text-right p-5">
+           <p id="paraX" class="inline cursor-pointer" >X</p>
+        </div>
+           
+           <ul class="flex flex-col items-center gap-10 text-gray-600 ">
+               <li>
+                   <a class="hover:underline hover:text-black" href="index.html"> Home</a>
+               </li>
+               <li>
+                   <a class="hover:underline hover:text-black" href="product.html"> Products</a>
+               </li>
+               <li>
+                   <a class="hover:underline hover:text-black" href="contact.html"> Contact</a>
+               </li>
+           </ul>
+      
+   </section>
     <!--Product title sec-->
     <div class="text-center mt-5">
         <h1 class="font-bold text-3xl text-center p-4">Our Products</h1>
-        <input type="text" placeholder="Search for a Product..." style="width: 80%;" class="border border-black p-2 rounded ">
+        <input type="text" id="search" placeholder="Search for a Product..." style="width: 80%;" class="border border-black p-2 rounded ">
     </div>
 
     <!--products img-->
-    <div class="grid md:grid-cols-4 p-5 mt-5 text-center gap-5 grid-cols-2">
+    <div class="grid md:grid-cols-4 p-5 mt-5 text-center gap-5 grid-cols-2" id="product_container">
         <div>
             <img src="./images/p1rose.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
+            <h3>Rose Plant</h3>
             <p>$20</p>
         </div>
         <div>
             <img src="./images/p2Hydrangea.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Hydrangea Plant</p>
+            <h3>Hydrangea Plant</h3>
             <p>$40</p>
         </div>
         <div>
             <img src="./images/p3Lavender.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Lavender Plant</p>
+            <h3>Lavender Plant</h3>
             <p>$30</p>
         </div>
         <div>
             <img src="./images/p4peony.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>peony Plant</p>
+            <h3>Peony Plant</h3>
             <p>$50</p>
         </div>
         <div>
             <img src="./images/p5Daisy.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Daisy Plant</p>
+            <h3>Daisy Plant</h3>
             <p>$60</p>
         </div>
         <div>
             <img src="./images/p6orchid.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Orchid Plant</p>
+            <h3>Orchid Plant</h3>
             <p>$35</p>
         </div>
         <div>
             <img src="./images/p7dahlia.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Dahlia Plant</p>
+            <h3>Dahlia Plant</h3>
             <p>$45</p>
         </div>
         <div>
             <img src="./images/p8snowdrop.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Snowdrop Plant</p>
+            <h3>Snowdrop Plant</h3>
             <p>$25</p>
         </div>
     </div>
@@ -82,6 +101,7 @@
         <p>&copy; 2021 Greenday.com</p>
 
     </section>
+    <script src="product.js"></script>
     
 </body>
 </html>

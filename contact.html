@@ -12,7 +12,7 @@
      <!--responsive navbar-->
      <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2x1">GREENDEN</h1>
-        <img src="./images/menu.png" width="20px" height="20px" class="md:hidden ">
+        <img src="./images/menu.png"  id="menu_img" width="20px" height="20px" class="md:hidden ">
 
         <ul class="flex gap-5 text-gray-600 hidden md:flex">
             <li>
@@ -26,6 +26,25 @@
             </li>
         </ul>
     </nav>
+    <!--side bar-->
+    <section id="side_bar" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 " style="width:50%; height:100vh; right:-50%;">
+        <div id="close_nav" class="text-right p-5">
+           <p id="paraX" class="inline cursor-pointer" >X</p>
+        </div>
+           
+           <ul class="flex flex-col items-center gap-10 text-gray-600 ">
+               <li>
+                   <a class="hover:underline hover:text-black" href="index.html"> Home</a>
+               </li>
+               <li>
+                   <a class="hover:underline hover:text-black" href="product.html"> Products</a>
+               </li>
+               <li>
+                   <a class="hover:underline hover:text-black" href="contact.html"> Contact</a>
+               </li>
+           </ul>
+      
+   </section>
     <!--contact form-->
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -48,6 +67,7 @@
             </form>
         </div>
       </section>
+      
     
     <!--footer-->
     <section class="bg-green-100 p-10 flex flex-col gap-6">
@@ -56,5 +76,6 @@
         <p>&copy; 2021 Greenday.com</p>
 
     </section>
+    <script src="contact.js"></script>
 </body>
 </html>
